@@ -1,0 +1,47 @@
+{
+  "name": "vite-plugin-figaro-js",
+  "version": "0.0.1",
+  "description": "Use figaro-js to load environment variables in your vite project",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsc --noEmit && vite build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yellowspot/vite-plugin-figaro-js.git"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "figaro-js"
+  ],
+  "author": "matias@yellowspot.dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yellowspot/vite-plugin-figaro-js/issues"
+  },
+  "homepage": "https://github.com/yellowspot/vite-plugin-figaro-js#readme",
+  "engines": {
+    "node": ">= 18.x"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
